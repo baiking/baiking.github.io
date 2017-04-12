@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     
-    <title>用 CentOS 7 打造合适的科研环境 (转) | BaiKing</title>
+    <title>用 CentOS 7 打造合适的科研环境 | BaiKing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者 原文: 用 CentOS 7 打造合适的科研环境author: SeisMandate: 2014-07-15updated: 2016-10-19categories: Linux  这篇">
-<meta name="keywords" content="CentOS">
+    <meta name="description" content="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者 原文: 用 CentOS 7 打造合适的科研环境  这篇博文记录了我用 CentOS 7 搭建 地震学科研环境 的过程，供我个人在未来重装系统时参考。对于其他地震学科研人员，也许有借鉴意义。">
+<meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用 CentOS 7 打造合适的科研环境 (转)">
-<meta property="og:url" content="http://yoursite.com/2014/07/15/Centos-7-配置/index.html">
+<meta property="og:title" content="用 CentOS 7 打造合适的科研环境">
+<meta property="og:url" content="http://yoursite.com/2017/04/12/Untitled/index.html">
 <meta property="og:site_name" content="BaiKing">
-<meta property="og:description" content="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者 原文: 用 CentOS 7 打造合适的科研环境author: SeisMandate: 2014-07-15updated: 2016-10-19categories: Linux  这篇">
-<meta property="og:updated_time" content="2017-04-11T16:08:34.083Z">
+<meta property="og:description" content="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者 原文: 用 CentOS 7 打造合适的科研环境  这篇博文记录了我用 CentOS 7 搭建 地震学科研环境 的过程，供我个人在未来重装系统时参考。对于其他地震学科研人员，也许有借鉴意义。">
+<meta property="og:updated_time" content="2017-04-12T15:10:59.420Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用 CentOS 7 打造合适的科研环境 (转)">
-<meta name="twitter:description" content="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者 原文: 用 CentOS 7 打造合适的科研环境author: SeisMandate: 2014-07-15updated: 2016-10-19categories: Linux  这篇">
+<meta name="twitter:title" content="用 CentOS 7 打造合适的科研环境">
+<meta name="twitter:description" content="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者 原文: 用 CentOS 7 打造合适的科研环境  这篇博文记录了我用 CentOS 7 搭建 地震学科研环境 的过程，供我个人在未来重装系统时参考。对于其他地震学科研人员，也许有借鉴意义。">
     
 
     
@@ -77,14 +77,14 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -96,11 +96,11 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'pos',
-            PAGES: 'Pages',
-            CATEGORIES: 'kategori',
-            TAGS: 'tag',
-            UNTITLED: '(Untitled)',
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -128,7 +128,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
     </div>
 
                 </td>
@@ -148,16 +148,16 @@
             <h2 id="name">BaiKing</h2>
             <h3 id="title">LookDev artist</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Guangzhou, China</span>
-            <a id="follow" target="_blank" href="https://github.com/baiking/">IKUTI</a>
+            <a id="follow" target="_blank" href="https://github.com/baiking/">关注我</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
                 2
-                <span>pos</span>
+                <span>文章</span>
             </div>
             <div class="article-info-block">
-                1
-                <span>tag</span>
+                0
+                <span>标签</span>
             </div>
         </div>
         
@@ -180,7 +180,7 @@
 </aside>
 
             
-            <section id="main"><article id="post-Centos-7-配置" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-Untitled" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -188,7 +188,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            用 CentOS 7 打造合适的科研环境 (转)
+            用 CentOS 7 打造合适的科研环境
         </h1>
     
 
@@ -197,24 +197,14 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2014/07/15/Centos-7-配置/">
-            <time datetime="2014-07-14T16:00:00.000Z" itemprop="datePublished">2014-07-15</time>
+        <a href="/2017/04/12/Untitled/">
+            <time datetime="2017-04-12T15:10:24.000Z" itemprop="datePublished">2017-04-12</time>
         </a>
     </div>
 
 
                         
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Linux/">Linux</a>
-    </div>
-
                         
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/CentOS/">CentOS</a>
-    </div>
-
                     </div>
                 
             </header>
@@ -224,7 +214,7 @@
         
             
             <h4 id="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者"><a href="#这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者" class="headerlink" title="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者"></a>这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者</h4><hr>
-<p>原文: <a href="http://seisman.info/linux-environment-for-seismology-research.html#wine" target="_blank" rel="external">用 CentOS 7 打造合适的科研环境</a><br>author: SeisMan<br>date: 2014-07-15<br>updated: 2016-10-19<br>categories: Linux</p>
+<p>原文: <a href="http://seisman.info/linux-environment-for-seismology-research.html" target="_blank" rel="external">用 CentOS 7 打造合适的科研环境</a></p>
 <hr>
 <p>这篇博文记录了我用 CentOS 7 搭建 <strong>地震学科研环境</strong> 的过程，供我个人在未来重装系统时参考。对于其他地震学科研人员，也许有借鉴意义。</p>
 <p>阅读须知：</p>
@@ -651,7 +641,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 
             
     
-        <a href="http://yoursite.com/2014/07/15/Centos-7-配置/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yoursite.com/2014/07/15/Centos-7-配置/">Komentar</a>
+        <a href="http://yoursite.com/2017/04/12/Untitled/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yoursite.com/2017/04/12/Untitled/">评论</a>
     
 
         </footer>
@@ -660,11 +650,15 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
         
 <nav id="article-nav">
     
-    
-        <a href="/2017/04/12/About-Katana/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Lebih Tua</strong>
-            <div class="article-nav-title">关于本blog</div>
+        <a href="/2017/04/12/About-Katana/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    关于本blog
+                
+            </div>
         </a>
+    
     
 </nav>
 
@@ -690,9 +684,28 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">terbaru</h3>
+        <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/04/12/Untitled/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/04/12/Untitled/" class="title">用 CentOS 7 打造合适的科研环境</a></p>
+                            <p class="item-date"><time datetime="2017-04-12T15:10:24.000Z" itemprop="datePublished">2017-04-12</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -713,60 +726,27 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2014/07/15/Centos-7-配置/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Linux/">Linux</a></p>
-                            <p class="item-title"><a href="/2014/07/15/Centos-7-配置/" class="title">用 CentOS 7 打造合适的科研环境 (转)</a></p>
-                            <p class="item-date"><time datetime="2014-07-14T16:00:00.000Z" itemprop="datePublished">2014-07-15</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
 
     
         
+    
+        
     <div class="widget-wrap">
-        <h3 class="widget-title">kategori</h3>
+        <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
     
         
-    <div class="widget-wrap">
-        <h3 class="widget-title">arsip</h3>
-        <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li></ul>
-        </div>
-    </div>
-
-    
-        
-    <div class="widget-wrap">
-        <h3 class="widget-title">tag</h3>
-        <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/">CentOS</a><span class="tag-list-count">1</span></li></ul>
-        </div>
-    </div>
-
     
         
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">tautan</h3>
+        <h3 class="widget-title">链接</h3>
         <div class="widget">
             <ul>
                 
@@ -797,9 +777,9 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://yoursite.com/2014/07/15/Centos-7-配置/';
+            this.page.url = 'http://yoursite.com/2017/04/12/Untitled/';
         
-        this.page.identifier = 'Centos-7-配置';
+        this.page.identifier = 'Untitled';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
