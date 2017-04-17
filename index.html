@@ -205,20 +205,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a><i class="icon-cog"></i><strong>配置</strong></h1><h4 id="添加国内源"><a href="#添加国内源" class="headerlink" title="添加国内源"></a>添加国内源</h4><p>在下载和更新软件时，系统自带的软件源还是比较慢的，添加国内的第三方软件源可提高下载速度。依次在终端输入如下命令： </p>
-<blockquote>
-<p>su  </p>
-<p>cd /etc/yum.repos.d</p>
-<p>wget <a href="http://mirrors.163.com/.help/fedora-163.repo" target="_blank" rel="external">http://mirrors.163.com/.help/fedora-163.repo</a></p>
-<p>wget <a href="http://mirrors.163.com/.help/fedora-updates-163.repo" target="_blank" rel="external">http://mirrors.163.com/.help/fedora-updates-163.repo</a></p>
-<p>wget <a href="http://mirrors.sohu.com/help/fedora-sohu.repo" target="_blank" rel="external">http://mirrors.sohu.com/help/fedora-sohu.repo</a></p>
-<p>wget <a href="http://mirrors.sohu.com/help/fedora-updates-sohu.repo" target="_blank" rel="external">http://mirrors.sohu.com/help/fedora-updates-sohu.repo</a></p>
-<p>wget <a href="http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=0" target="_blank" rel="external">http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=0</a></p>
-<p>wget <a href="http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=1" target="_blank" rel="external">http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=1</a></p>
-<p>wget <a href="http://mirrors.yun-idc.com/fedora-cds.repo" target="_blank" rel="external">http://mirrors.yun-idc.com/fedora-cds.repo</a></p>
-<p>wget <a href="http://mirrors.yun-idc.com/fedora-updates-cds.repo" target="_blank" rel="external">http://mirrors.yun-idc.com/fedora-updates-cds.repo</a></p>
-<p>yum makecache</p>
-</blockquote>
+            <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a><i class="icon-cog"></i><strong>配置</strong></h1><h4 id="添加国内源"><a href="#添加国内源" class="headerlink" title="添加国内源"></a>添加国内源</h4><p>在下载和更新软件时，系统自带的软件源还是比较慢的，添加国内的第三方软件源可提高下载速度。依次在终端输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&gt;su  </div><div class="line"></div><div class="line">&gt;cd /etc/yum.repos.d</div><div class="line"></div><div class="line">&gt;wget http://mirrors.163.com/.help/fedora-163.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.163.com/.help/fedora-updates-163.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.sohu.com/help/fedora-sohu.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.sohu.com/help/fedora-updates-sohu.repo</div><div class="line"></div><div class="line">&gt;wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=0</div><div class="line"></div><div class="line">&gt;wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=1</div><div class="line"></div><div class="line">&gt;wget http://mirrors.yun-idc.com/fedora-cds.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.yun-idc.com/fedora-updates-cds.repo</div><div class="line"></div><div class="line">&gt;yum makecache</div></pre></td></tr></table></figure></p>
 <h4 id="自动选择最快源插件"><a href="#自动选择最快源插件" class="headerlink" title="自动选择最快源插件"></a>自动选择最快源插件</h4><blockquote>
 <p>sudo dnf install yum-fastestmirror</p>
 </blockquote>
