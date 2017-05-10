@@ -3,19 +3,14 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Fedora 25 桌面配置 | BaiKing</title>
+    <title>标签: Raspberry | BaiKing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="配置添加国内源在下载和更新软件时，系统自带的软件源还是比较慢的，添加国内的第三方软件源可提高下载速度。依次在终端输入如下命令：123456789101112131415161718192021&amp;gt;su  &amp;gt;cd /etc/yum.repos.d&amp;gt;wget http://mirrors.163.com/.help/fedora-163.repo&amp;gt;wget http://mirr">
-<meta name="keywords" content="Fefora,Centos,Linux">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Fedora 25 桌面配置">
-<meta property="og:url" content="http://yoursite.com/2017/04/16/Fedora-25-桌面配置/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="BaiKing">
+<meta property="og:url" content="http://yoursite.com/tags/Raspberry/index.html">
 <meta property="og:site_name" content="BaiKing">
-<meta property="og:description" content="配置添加国内源在下载和更新软件时，系统自带的软件源还是比较慢的，添加国内的第三方软件源可提高下载速度。依次在终端输入如下命令：123456789101112131415161718192021&amp;gt;su  &amp;gt;cd /etc/yum.repos.d&amp;gt;wget http://mirrors.163.com/.help/fedora-163.repo&amp;gt;wget http://mirr">
-<meta property="og:updated_time" content="2017-05-09T15:49:57.548Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fedora 25 桌面配置">
-<meta name="twitter:description" content="配置添加国内源在下载和更新软件时，系统自带的软件源还是比较慢的，添加国内的第三方软件源可提高下载速度。依次在终端输入如下命令：123456789101112131415161718192021&amp;gt;su  &amp;gt;cd /etc/yum.repos.d&amp;gt;wget http://mirrors.163.com/.help/fedora-163.repo&amp;gt;wget http://mirr">
+<meta name="twitter:title" content="BaiKing">
     
 
     
@@ -176,163 +171,45 @@
 </aside>
 
             
-            <section id="main"><article id="post-Fedora-25-桌面配置" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
+            <section id="main">
+<div class="timeline timeline-wrap">
+    <div class="timeline-row timeline-row-major">
+        <span class="node"><i class="fa fa-tag"></i></span>
+        <h1 class="title">#Raspberry</h1>
+    </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
                 
     
-        <h1 class="article-title" itemprop="name">
-            Fedora 25 桌面配置
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/2017/05/10/Raspberry-Pi-3B-Proxy-Server-配置/">Raspberry Pi 3B  Proxy Server 配置</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/04/16/Fedora-25-桌面配置/">
-            <time datetime="2017-04-16T15:57:46.000Z" itemprop="datePublished">2017-04-16</time>
+        <a href="/2017/05/10/Raspberry-Pi-3B-Proxy-Server-配置/">
+            <time datetime="2017-05-10T15:27:00.000Z" itemprop="datePublished">2017-05-10</time>
         </a>
     </div>
 
 
-                        
-                        
+                    
+                    
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Centos/">Centos</a>, <a class="tag-link" href="/tags/Fefora/">Fefora</a>, <a class="tag-link" href="/tags/Linux/">Linux</a>
+        <a class="tag-link" href="/tags/Lantern/">Lantern</a>, <a class="tag-link" href="/tags/Raspberry/">Raspberry</a>, <a class="tag-link" href="/tags/Ubuntu/">Ubuntu</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a><i class="icon-cog"></i><strong>配置</strong></h1><h4 id="添加国内源"><a href="#添加国内源" class="headerlink" title="添加国内源"></a>添加国内源</h4><p>在下载和更新软件时，系统自带的软件源还是比较慢的，添加国内的第三方软件源可提高下载速度。依次在终端输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&gt;su  </div><div class="line"></div><div class="line">&gt;cd /etc/yum.repos.d</div><div class="line"></div><div class="line">&gt;wget http://mirrors.163.com/.help/fedora-163.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.163.com/.help/fedora-updates-163.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.sohu.com/help/fedora-sohu.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.sohu.com/help/fedora-updates-sohu.repo</div><div class="line"></div><div class="line">&gt;wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=0</div><div class="line"></div><div class="line">&gt;wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=1</div><div class="line"></div><div class="line">&gt;wget http://mirrors.yun-idc.com/fedora-cds.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.yun-idc.com/fedora-updates-cds.repo</div><div class="line"></div><div class="line">&gt;yum makecache</div></pre></td></tr></table></figure></p>
-<h4 id="自动选择最快源插件"><a href="#自动选择最快源插件" class="headerlink" title="自动选择最快源插件"></a>自动选择最快源插件</h4><blockquote>
-<p>sudo dnf install yum-fastestmirror</p>
-</blockquote>
-<h4 id="安装下载加速插件"><a href="#安装下载加速插件" class="headerlink" title="安装下载加速插件"></a>安装下载加速插件</h4><blockquote>
-<p>dnfinstall yum-presto</p>
-</blockquote>
-<h4 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h4><blockquote>
-<p>sudo dnf update</p>
-</blockquote>
-<h4 id="安装鼠标右键在终端中打开"><a href="#安装鼠标右键在终端中打开" class="headerlink" title="安装鼠标右键在终端中打开"></a>安装鼠标右键在终端中打开</h4><blockquote>
-<p>yum install nautilus-open-terminal  </p>
-</blockquote>
-<h4 id="安装-Nvidia-显卡驱动"><a href="#安装-Nvidia-显卡驱动" class="headerlink" title="安装 Nvidia 显卡驱动"></a>安装 <strong>Nvidia</strong> 显卡驱动</h4><blockquote>
-<p><a href="https://rpmfusion.org/Howto/nVidia" target="_blank" rel="external">https://rpmfusion.org/Howto/nVidia</a></p>
-</blockquote>
-<hr>
-<h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a><i class="icon-magic"></i><strong>美化</strong></h1><h4 id="安装-gnome-tweak-tool"><a href="#安装-gnome-tweak-tool" class="headerlink" title="安装 gnome-tweak-tool"></a>安装 gnome-tweak-tool</h4><blockquote>
-<p>sudo dnf install gnome-tweak-tool</p>
-</blockquote>
-<h4 id="把系统自带的文件图标改小"><a href="#把系统自带的文件图标改小" class="headerlink" title="把系统自带的文件图标改小"></a>把系统自带的文件图标改小</h4><blockquote>
-<p>gsettings set org.gnome.nautilus.icon-view default-zoom-level small</p>
-</blockquote>
-<h3 id="安装Theme"><a href="#安装Theme" class="headerlink" title="安装Theme"></a>安装Theme</h3><blockquote>
-<p><strong>主题：</strong>  <a href="https://www.gnome-look.org/p/1167049/" target="_blank" rel="external"><strong>OSX-Arc-Collection</strong></a>  </p>
-<p><strong>图标：</strong> <a href="https://github.com/LinxGem33/Arc-OSX-Icons" target="_blank" rel="external"><strong>Arc-OSX-Icons</strong></a></p>
-<p><strong>Dock：</strong> <a href="https://micheleg.github.io/dash-to-dock/download.html" target="_blank" rel="external"><strong>Dash to Dock</strong></a></p>
-</blockquote>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-    <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone">QQ空间</a>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<style>
-    .jiathis_style div:first-child:not(.jiadiv_01) {
-        width: auto !important;
-        border: none !important;
-    }
-    .jiathis_style .jiadiv_01 {
-        margin: 10px 0;
-        border-radius: 4px;
-        border: #e1e1e1 solid 1px;
-    }
-    .jiathis_style .jiadiv_01 div:first-child {
-        display: none;
-    }
-    .jiathis_style .jiadiv_02 {
-        padding: 7px 0 !important;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle {
-        width: 85px;
-        border: none;
-        height: auto;
-        margin: 3px 10px;
-        padding: 6px 10px;
-        border-radius: 4px;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:hover {
-        border: none;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
-        margin-left: 0;
-    }
-    .jiathis_style .jtico:hover {
-        opacity: 1;
-    }
-    .jiathis_style .ckepopBottom,
-    .jiathis_style .centerBottom {
-        width: auto !important;
-        padding: 5px;
-        background: #f7f7f7;
-    }
-</style>
-
-
-
-</div>
-
-            
-        </footer>
-    </div>
-    
-        
-<nav id="article-nav">
-    
-        <a href="/2017/04/12/用 CentOS 7 打造合适的科研环境/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
-            <div class="article-nav-title">
-                
-                    用 CentOS 7 打造合适的科研环境 (转)
-                
+                </div>
             </div>
-        </a>
+        </div>
     
-    
-        <a href="/2017/05/10/Raspberry-Pi-3B-Proxy-Server-配置/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">Raspberry Pi 3B  Proxy Server 配置</div>
-        </a>
-    
-</nav>
-
-
-    
-</article>
-
-
-    
+</div>
 </section>
             
                 <aside id="sidebar">
@@ -477,9 +354,7 @@
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://yoursite.com/2017/04/16/Fedora-25-桌面配置/';
-        
-        this.page.identifier = 'Fedora-25-桌面配置';
+        this.page.identifier = 'undefined';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

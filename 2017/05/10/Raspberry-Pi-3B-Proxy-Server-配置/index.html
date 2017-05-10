@@ -3,14 +3,19 @@
 <head>
     <meta charset="utf-8">
     
-    <title>BaiKing</title>
+    <title>Raspberry Pi 3B  Proxy Server 配置 | BaiKing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="BaiKing">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="Raspberry Pi 3B  Proxy Server 配置 自从发现树莓派可以运行 ubuntu 后就一直再想能不能在上面跑 lantern ,从而实现低功率全局梯子，在看了大量入门帖子后决定入手一试，反正也不贵，我入手的是  e14 国行版，和英国产的应该都没区别的，配件另外买了带开关的电源、16G TF 卡、一个原装外壳、两铜一铝的散热片，其实散热片买一铜一铝就够了，第三个散热完全用不上">
+<meta name="keywords" content="Lantern,Ubuntu,Raspberry">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Raspberry Pi 3B  Proxy Server 配置">
+<meta property="og:url" content="http://yoursite.com/2017/05/10/Raspberry-Pi-3B-Proxy-Server-配置/index.html">
 <meta property="og:site_name" content="BaiKing">
+<meta property="og:description" content="Raspberry Pi 3B  Proxy Server 配置 自从发现树莓派可以运行 ubuntu 后就一直再想能不能在上面跑 lantern ,从而实现低功率全局梯子，在看了大量入门帖子后决定入手一试，反正也不贵，我入手的是  e14 国行版，和英国产的应该都没区别的，配件另外买了带开关的电源、16G TF 卡、一个原装外壳、两铜一铝的散热片，其实散热片买一铜一铝就够了，第三个散热完全用不上">
+<meta property="og:updated_time" content="2017-05-10T15:37:50.019Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BaiKing">
+<meta name="twitter:title" content="Raspberry Pi 3B  Proxy Server 配置">
+<meta name="twitter:description" content="Raspberry Pi 3B  Proxy Server 配置 自从发现树莓派可以运行 ubuntu 后就一直再想能不能在上面跑 lantern ,从而实现低功率全局梯子，在看了大量入门帖子后决定入手一试，反正也不贵，我入手的是  e14 国行版，和英国产的应该都没区别的，配件另外买了带开关的电源、16G TF 卡、一个原装外壳、两铜一铝的散热片，其实散热片买一铜一铝就够了，第三个散热完全用不上">
     
 
     
@@ -171,16 +176,15 @@
 </aside>
 
             
-            <section id="main">
-    <article id="post-Raspberry-Pi-3B-Proxy-Server-配置" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-Raspberry-Pi-3B-Proxy-Server-配置" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
             <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/05/10/Raspberry-Pi-3B-Proxy-Server-配置/">Raspberry Pi 3B  Proxy Server 配置</a>
+        <h1 class="article-title" itemprop="name">
+            Raspberry Pi 3B  Proxy Server 配置
         </h1>
     
 
@@ -322,373 +326,27 @@
         </footer>
     </div>
     
-</article>
-
-
-
-    <article id="post-Fedora-25-桌面配置" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
         
-        
-            <header class="article-header">
-                
+<nav id="article-nav">
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/04/16/Fedora-25-桌面配置/">Fedora 25 桌面配置</a>
-        </h1>
-    
-
+        <a href="/2017/04/16/Fedora-25-桌面配置/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
                 
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/04/16/Fedora-25-桌面配置/">
-            <time datetime="2017-04-16T15:57:46.000Z" itemprop="datePublished">2017-04-16</time>
+                    Fedora 25 桌面配置
+                
+            </div>
         </a>
-    </div>
+    
+    
+</nav>
 
 
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Centos/">Centos</a>, <a class="tag-link" href="/tags/Fefora/">Fefora</a>, <a class="tag-link" href="/tags/Linux/">Linux</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a><i class="icon-cog"></i><strong>配置</strong></h1><h4 id="添加国内源"><a href="#添加国内源" class="headerlink" title="添加国内源"></a>添加国内源</h4><p>在下载和更新软件时，系统自带的软件源还是比较慢的，添加国内的第三方软件源可提高下载速度。依次在终端输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&gt;su  </div><div class="line"></div><div class="line">&gt;cd /etc/yum.repos.d</div><div class="line"></div><div class="line">&gt;wget http://mirrors.163.com/.help/fedora-163.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.163.com/.help/fedora-updates-163.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.sohu.com/help/fedora-sohu.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.sohu.com/help/fedora-updates-sohu.repo</div><div class="line"></div><div class="line">&gt;wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=0</div><div class="line"></div><div class="line">&gt;wget http://lug.ustc.edu.cn/wiki/_export/code/mirrors/help/fedora?codeblock=1</div><div class="line"></div><div class="line">&gt;wget http://mirrors.yun-idc.com/fedora-cds.repo</div><div class="line"></div><div class="line">&gt;wget http://mirrors.yun-idc.com/fedora-updates-cds.repo</div><div class="line"></div><div class="line">&gt;yum makecache</div></pre></td></tr></table></figure></p>
-<h4 id="自动选择最快源插件"><a href="#自动选择最快源插件" class="headerlink" title="自动选择最快源插件"></a>自动选择最快源插件</h4><blockquote>
-<p>sudo dnf install yum-fastestmirror</p>
-</blockquote>
-<h4 id="安装下载加速插件"><a href="#安装下载加速插件" class="headerlink" title="安装下载加速插件"></a>安装下载加速插件</h4><blockquote>
-<p>dnfinstall yum-presto</p>
-</blockquote>
-<h4 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h4><blockquote>
-<p>sudo dnf update</p>
-</blockquote>
-<h4 id="安装鼠标右键在终端中打开"><a href="#安装鼠标右键在终端中打开" class="headerlink" title="安装鼠标右键在终端中打开"></a>安装鼠标右键在终端中打开</h4><blockquote>
-<p>yum install nautilus-open-terminal  </p>
-</blockquote>
-<h4 id="安装-Nvidia-显卡驱动"><a href="#安装-Nvidia-显卡驱动" class="headerlink" title="安装 Nvidia 显卡驱动"></a>安装 <strong>Nvidia</strong> 显卡驱动</h4><blockquote>
-<p><a href="https://rpmfusion.org/Howto/nVidia" target="_blank" rel="external">https://rpmfusion.org/Howto/nVidia</a></p>
-</blockquote>
-<hr>
-<h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a><i class="icon-magic"></i><strong>美化</strong></h1><h4 id="安装-gnome-tweak-tool"><a href="#安装-gnome-tweak-tool" class="headerlink" title="安装 gnome-tweak-tool"></a>安装 gnome-tweak-tool</h4><blockquote>
-<p>sudo dnf install gnome-tweak-tool</p>
-</blockquote>
-<h4 id="把系统自带的文件图标改小"><a href="#把系统自带的文件图标改小" class="headerlink" title="把系统自带的文件图标改小"></a>把系统自带的文件图标改小</h4><blockquote>
-<p>gsettings set org.gnome.nautilus.icon-view default-zoom-level small</p>
-</blockquote>
-<h3 id="安装Theme"><a href="#安装Theme" class="headerlink" title="安装Theme"></a>安装Theme</h3><blockquote>
-<p><strong>主题：</strong>  <a href="https://www.gnome-look.org/p/1167049/" target="_blank" rel="external"><strong>OSX-Arc-Collection</strong></a>  </p>
-<p><strong>图标：</strong> <a href="https://github.com/LinxGem33/Arc-OSX-Icons" target="_blank" rel="external"><strong>Arc-OSX-Icons</strong></a></p>
-<p><strong>Dock：</strong> <a href="https://micheleg.github.io/dash-to-dock/download.html" target="_blank" rel="external"><strong>Dash to Dock</strong></a></p>
-</blockquote>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-    <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone">QQ空间</a>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<style>
-    .jiathis_style div:first-child:not(.jiadiv_01) {
-        width: auto !important;
-        border: none !important;
-    }
-    .jiathis_style .jiadiv_01 {
-        margin: 10px 0;
-        border-radius: 4px;
-        border: #e1e1e1 solid 1px;
-    }
-    .jiathis_style .jiadiv_01 div:first-child {
-        display: none;
-    }
-    .jiathis_style .jiadiv_02 {
-        padding: 7px 0 !important;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle {
-        width: 85px;
-        border: none;
-        height: auto;
-        margin: 3px 10px;
-        padding: 6px 10px;
-        border-radius: 4px;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:hover {
-        border: none;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
-        margin-left: 0;
-    }
-    .jiathis_style .jtico:hover {
-        opacity: 1;
-    }
-    .jiathis_style .ckepopBottom,
-    .jiathis_style .centerBottom {
-        width: auto !important;
-        padding: 5px;
-        background: #f7f7f7;
-    }
-</style>
-
-
-
-</div>
-
-            
-        </footer>
-    </div>
     
 </article>
 
 
-
-    <article id="post-用 CentOS 7 打造合适的科研环境" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/04/12/用 CentOS 7 打造合适的科研环境/">用 CentOS 7 打造合适的科研环境 (转)</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/04/12/用 CentOS 7 打造合适的科研环境/">
-            <time datetime="2017-04-12T15:10:24.000Z" itemprop="datePublished">2017-04-12</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/CentOS/">CentOS</a>, <a class="tag-link" href="/tags/Python/">Python</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h4 id="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者"><a href="#这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者" class="headerlink" title="这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者"></a>这篇文章很详细的讲解了如何配置一个完整的CentOS系统，从中学到了很多关于Linux和CentOS的东西，在这里转载这篇文章，希望有更多人的人能看到同时也当作是自己的一个备忘，方便以后自己查询，再次感谢作者</h4><hr>
-<p>原文: <a href="http://seisman.info/linux-environment-for-seismology-research.html">用 CentOS 7 打造合适的科研环境</a></p>
-<hr>
-<p>这篇博文记录了我用 CentOS 7 搭建 <strong>地震学科研环境</strong> 的过程，供我个人在未来重装系统时参考。对于其他地震学科研人员，也许有借鉴意义。</p>
-<p>阅读须知：</p>
-<ol>
-<li>本文适用于个人电脑，不适用于服务器；</li>
-<li><strong>不推荐刚接触 Linux 的人使用 CentOS 发行版</strong>；</li>
-<li>本文尽量写的浅显易懂，但要求读者掌握 Linux 基础知识；</li>
-<li>本文所有操作均在 CentOS 7 下完成，其他发行版或多或少与 CentOS 7 不同，因而仅供参考；</li>
-<li>本文所安装的软件纯粹出于个人习惯及喜好，读者应自己判断，按需安装；</li>
-</ol></p>
-            <p class="article-more-link">
-                <a href="/2017/04/12/用 CentOS 7 打造合适的科研环境/#more">查看更多</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-    <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone">QQ空间</a>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<style>
-    .jiathis_style div:first-child:not(.jiadiv_01) {
-        width: auto !important;
-        border: none !important;
-    }
-    .jiathis_style .jiadiv_01 {
-        margin: 10px 0;
-        border-radius: 4px;
-        border: #e1e1e1 solid 1px;
-    }
-    .jiathis_style .jiadiv_01 div:first-child {
-        display: none;
-    }
-    .jiathis_style .jiadiv_02 {
-        padding: 7px 0 !important;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle {
-        width: 85px;
-        border: none;
-        height: auto;
-        margin: 3px 10px;
-        padding: 6px 10px;
-        border-radius: 4px;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:hover {
-        border: none;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
-        margin-left: 0;
-    }
-    .jiathis_style .jtico:hover {
-        opacity: 1;
-    }
-    .jiathis_style .ckepopBottom,
-    .jiathis_style .centerBottom {
-        width: auto !important;
-        padding: 5px;
-        background: #f7f7f7;
-    }
-</style>
-
-
-
-</div>
-
-            
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-About-Katana" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/04/12/About-Katana/">关于本blog</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/04/12/About-Katana/">
-            <time datetime="2017-04-12T09:21:04.000Z" itemprop="datePublished">2017-04-12</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Katana/">Katana</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>一番折腾终于搞好了这个博客，相对wordpress，转战hexo再也不用担心主机的问题了（短期内），也是第一次真正接触、学习markdown，本站刚建立，还在摸索中。</p>
-<p>以后我将会在这里分享一些自己学习和工作的经验以及一些感兴趣的事情，也当是一种记录吧。</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-    <div class="jiathis_style">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_qzone">QQ空间</a>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<style>
-    .jiathis_style div:first-child:not(.jiadiv_01) {
-        width: auto !important;
-        border: none !important;
-    }
-    .jiathis_style .jiadiv_01 {
-        margin: 10px 0;
-        border-radius: 4px;
-        border: #e1e1e1 solid 1px;
-    }
-    .jiathis_style .jiadiv_01 div:first-child {
-        display: none;
-    }
-    .jiathis_style .jiadiv_02 {
-        padding: 7px 0 !important;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle {
-        width: 85px;
-        border: none;
-        height: auto;
-        margin: 3px 10px;
-        padding: 6px 10px;
-        border-radius: 4px;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:hover {
-        border: none;
-    }
-    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
-        margin-left: 0;
-    }
-    .jiathis_style .jtico:hover {
-        opacity: 1;
-    }
-    .jiathis_style .ckepopBottom,
-    .jiathis_style .centerBottom {
-        width: auto !important;
-        padding: 5px;
-        background: #f7f7f7;
-    }
-</style>
-
-
-
-</div>
-
-            
-        </footer>
-    </div>
-    
-</article>
-
-
 </section>
             
                 <aside id="sidebar">
@@ -833,7 +491,9 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = 'undefined';
+            this.page.url = 'http://yoursite.com/2017/05/10/Raspberry-Pi-3B-Proxy-Server-配置/';
+        
+        this.page.identifier = 'Raspberry-Pi-3B-Proxy-Server-配置';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
